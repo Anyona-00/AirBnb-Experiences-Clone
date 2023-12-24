@@ -9,6 +9,7 @@ function Page (){
     return (
       <div>
         <Navbar />
+       
         <Hero />
       </div>
     );
