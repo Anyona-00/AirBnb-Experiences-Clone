@@ -8,6 +8,11 @@ body{
   margin: 0;
 }
 
+
+.gray{
+  color: gray;
+}
+
 /*Navbar*/
 .navbar{
   display: flex;
@@ -63,12 +68,58 @@ margin-bottom: 2rem;
 
 .hero-text p{
  margin-right: .3rem;
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 
 
+/*Card*/
 
+.card{
+  margin-left: 2rem;
+
+}
+
+
+.katie-img{
+  width: 11rem;
+height: 14.6875rem;
+margin-bottom: 0rem;
+
+}
+
+.rating{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+ margin-top: -.8rem;
+ font-size: 0.75rem;
+}
+
+
+.star{
+  width: 0.875rem;
+height: 0.875rem;
+
+}
+
+.learn{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+ 
+  
+}
+
+.learn p {
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+}
+
+
+.bold-text {
+  font-weight: bold;
+}
 
 
 

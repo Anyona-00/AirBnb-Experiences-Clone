@@ -1,16 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Navbar from './Navbar'
-import Hero from './Hero'
+//import Hero from './Hero'
+import Card from './Card'
 import './index.css'
 
-
+ // <Hero />
 function Page (){
     return (
       <div>
         <Navbar />
-       
-        <Hero />
+      
+      
+
+        <Card />
       </div>
     );
   }
