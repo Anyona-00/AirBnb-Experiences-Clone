@@ -4,23 +4,21 @@ import Navbar from './Navbar'
 //import Hero from './Hero'
 import Card from './Card'
 import './index.css'
+import data from './data'
+
+const info = data.map((card) => {
+  return <Card img = {card.img} rating = {card.rating} reveiwCount = {card.reviewCount} location = {card.location} title = {card.title} price ={card.price}/>
+})
 
  // <Hero />
 function Page (){
     return (
       <div>
         <Navbar />
-      
+      {info}
       
 
-        <Card
-        img = "katie.png"
-        rating = {5.0}
-        reveiwCount = {6}
-        Country = "USA"
-        title = "Life Lessons with katie zaferes"
-        price = "136"
-        />
+        
       </div>
     );
   }
