@@ -13,7 +13,14 @@ function Page (){
       
       
 
-        <Card />
+        <Card
+        img = "katie.png"
+        rating = {5.0}
+        reveiwCount = {6}
+        Country = "USA"
+        title = "Life Lessons with katie zaferes"
+        price = "136"
+        />
       </div>
     );
   }
