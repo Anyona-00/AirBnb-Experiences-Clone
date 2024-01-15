@@ -6,8 +6,17 @@ import Card from './Card'
 import './index.css'
 import data from './data'
 
-const info = data.map((card) => {
-  return <Card img = {card.img} rating = {card.rating} reveiwCount = {card.reviewCount} location = {card.location} title = {card.title} price ={card.price}/>
+const infoCards = data.map((item) => {
+  return <Card /*card componenet*/
+  key = {item.id}
+  img = {item.img} 
+  rating = {item.stats.rating} 
+  reveiwCount = {item.stats.reviewCount} 
+  location = {item.location} 
+  title = {item.title} 
+  price ={item.price}
+  openSpots = {item.openSpots}
+  />
 })
 
  // <Hero />
@@ -15,7 +24,10 @@ function Page (){
     return (
       <div>
         <Navbar />
-      {info}
+
+        <div className="layout">
+      {infoCards}
+      </div>
       
 
         

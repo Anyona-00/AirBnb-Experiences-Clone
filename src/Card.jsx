@@ -8,8 +8,9 @@ export default function Card(props){
     return(
        <div className="card">
 
+        {props.openSpots === 0 && <div className="card-badge">SOLD OUT</div>}  {/* if the first value is truthy the second one will run */}
         
-<img src={`../src/assets/${props.img}`} className="katie-img"  />
+<img src={`../src/assets/${props.img}`} className="image"  />
 
         
 

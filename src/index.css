@@ -46,14 +46,7 @@ margin-bottom: 2rem;
 }
 
 
-@media (max-width: 400px){
-.experience{
-  width: 100%;
-    height: auto;
-    object-fit: cover;
-}
 
-}
 
 .hero-text{
   margin-left:2rem ;
@@ -72,19 +65,25 @@ margin-bottom: 2rem;
 }
 
 
-
+.layout{
+  display: flex;
+  overflow: scroll;
+}
 /*Card*/
 
 .card{
   margin-left: 2rem;
+  position: relative;
+  
 
 }
 
 
-.katie-img{
+.image{
   width: 11rem;
 height: 14.6875rem;
 margin-bottom: 0rem;
+border-radius: 10px;
 
 }
 
@@ -121,5 +120,23 @@ height: 0.875rem;
   font-weight: bold;
 }
 
+.card-badge{
+  position: absolute;
+  top: .5rem;
+  left: .7rem;
+  background-color: #FFF;
+border-radius: 1px;
+font-weight: bold;
+padding-left: .5rem;
+padding-right: .5rem;
+}
 
 
+@media (max-width: 400px){
+  .experience{
+    width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+  
+  }
